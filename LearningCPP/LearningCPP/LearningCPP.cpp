@@ -2,9 +2,22 @@
 //
 
 #include <iostream>
+#include <string>
+
+int pow(int base, int  power)
+{
+
+    int result = 1;
+    for (int i = 0; i < power; +i)
+    {
+        result *= base;
+    }
+    return result;
+}
 
 int main()
 {
+    std::cout << "Result of the calculation: " << std::to_string(pow(2, 8)) << "\n";
     std::cout << "Hello World!, lucas\n";
 }
 
