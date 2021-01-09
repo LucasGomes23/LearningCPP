@@ -149,6 +149,9 @@
   <ItemGroup>
     <ClCompile Include="LearningCPP.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="random_number.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
