@@ -147,9 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="for_loop_examples.cpp" />
     <ClCompile Include="LearningCPP.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="guessing_game.h" />
     <ClInclude Include="random_number.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
