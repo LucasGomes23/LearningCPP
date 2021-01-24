@@ -21,6 +21,12 @@
     <ClCompile Include="for_loop_examples.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="const_example.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Switchcase_example.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="random_number.h">

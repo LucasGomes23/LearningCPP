@@ -147,8 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="const_example.cpp" />
     <ClCompile Include="for_loop_examples.cpp" />
     <ClCompile Include="LearningCPP.cpp" />
+    <ClCompile Include="Switchcase_example.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="guessing_game.h" />
