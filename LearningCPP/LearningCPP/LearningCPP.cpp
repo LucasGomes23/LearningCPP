@@ -11,7 +11,7 @@ void show_xor(bool a, bool b)
 {
 	std::cout << "a: " << std::to_string(a) << "  "
 		<< "b: " << std::to_string(b) << "  "
-		<< "a and b: " << std::to_string(!a && b) || (a && !b) << "\n";
+		<< "a and b: " << std::to_string((!a && b) || (a && !b)) << "\n";
 }
 void show_not(bool a, bool b)
 {
