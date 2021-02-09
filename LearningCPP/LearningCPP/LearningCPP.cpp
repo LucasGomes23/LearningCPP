@@ -1,57 +1,84 @@
-#include <iostream>
-#include <string>
+#include <stdio.h>
 
-void show_and(bool a, bool b)
-{
-	std::cout << "a: " << std::to_string(a) << "  "
-		<< "b: " << std::to_string(b) << "  "
-		<< "a and b: " << std::to_string(a && b) << "\n";
-}
-void show_xor(bool a, bool b)
-{
-	std::cout << "a: " << std::to_string(a) << "  "
-		<< "b: " << std::to_string(b) << "  "
-		<< "a and b: " << std::to_string((!a && b) || (a && !b)) << "\n";
-}
-void show_not(bool a)
-{
-	std::cout << "a: " << std::to_string(a) << "  "
-		<< "not a: " << std::to_string(!a) << "\n";
-}
-void show_or(bool a, bool b)
-{
-	std::cout << "a: " << std::to_string(a) << "  "
-		<< "b: " << std::to_string(b) << "  "
-		<< "a and b: " << std::to_string(a || b) << "\n";
-}
 int main()
 {
+    printf("hello.\n");
 
-	std::cout << "====TRUTH TABLE FOR AND =========\n";
+    //Data
+    int age = 21;
 
-	show_and(false, false);
-	show_and(false, true);
-	show_and(true, false);
-	show_and(true, true);
-
-	std::cout << "====TRUTH TABLE FOR OR =========\n";
-
-	show_or(false, false);
-	show_or(false, true);
-	show_or(true, false);
-	show_or(true, true);
-
-	std::cout << "====TRUTH TABLE FOR XOR =========\n";
+    {
+        // character range is [-128,127]
+        char my_character = 0x74;  // 8 bits - byte
+                                  // 16 - 2 bytes - word
 
 
-	show_xor(false, false);
-	show_xor(false, true);
-	show_xor(true, false);
-	show_xor(true, true);
 
-	std::cout << "====TRUTH TABLE FOR NOT =========\n";
+        // unsigned char range is [0, 255]
 
-	show_not(false);
-	show_not(true);
+        unsigned char my_unsigned_char = 12;
 
+
+
+        // unsigned int range ir [0, 4294967295]
+
+        unsigned int my_long_number = 4294967295;
+
+
+
+        // bool range is [0,1]
+
+        bool my_bool = false;
+
+
+
+        // unsigned long long range is [0, 18446744073709551615]
+
+        unsigned long long my_long = 1238712936182736;
+
+
+
+        int number_of_cars[3] = { 1, 2, 3 };
+
+
+
+        // float uses 32 bits
+
+        float pi_float = 3.1415926535;
+
+
+
+        // double uses 64 bits
+
+        double pi_double = 3.1415926535;
+
+        printf("The value of character is %.10f", pi_double);
+
+    }
+    //binary to hexadecimal
+
+    // 0000 = 0
+    // 0001 = 1
+    // 0010 = 2
+    // 0011 = 3
+    // 0100 = 4
+    // 0101 = 5
+    // 0110 = 6
+    // 0111 = 7
+    // 1000 = 8
+    // 1001 = 9
+    // 1010 = A
+    // 1011 = B
+    // 1100 = C
+    // 1101 = D
+    // 1110 = E
+    // 1111 = F
+
+    //example:  0110 1111 = 3F
+
+    //decimal to binary 
+    //116 = (bin) 0111 0100 = (hex) 74
+    // 116 - 64 = 52
+    // 20 - 16
+    // 4
 }
